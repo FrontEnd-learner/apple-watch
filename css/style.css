@@ -1,6 +1,7 @@
 /* CUSTOM PROPERTY */
 :root{
     --primary: #ea625c;
+    --primary-dark: #c9514c;
     --text-color: #333;
 }
 /* GLOBAL */
@@ -42,6 +43,27 @@ img{
     padding-right: 20px;
     margin-right: auto;
     margin-left: auto;
+}
+
+/* BUTTON */
+.button{
+    display: inline-block;
+    padding: 12px 38px;
+    border: 0;
+    text-decoration: none;
+    background-color: var(--primary);
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+.button:hover{
+    background-color: var(--primary-dark);
+}
+.button:active{
+    opacity: 0.6;
 }
 /* MAIN CONTENT */
 .main-content{
@@ -98,4 +120,28 @@ img{
     background-color: #fff;
     border: 0;
     border-bottom: 1px solid #333;
+}
+
+/* HERO */
+.hero {
+    padding-top: 140px;
+    padding-bottom: 185px;
+    border-bottom: 2px solid #ddd;
+}
+/* LEAD CTA */
+.lead-cta {
+    width: 100%;
+    max-width: 490px;
+}
+.lead-cta-heading {
+    margin-bottom: 30px;
+    font-size: 50px;
+    line-height: 1.2;
+    color: #000;
+}
+.lead-cta-text {
+    padding-left: 37px;
+    border-left: 3px solid #888;
+    margin-bottom: 30px;
+    color: #777;
 }
