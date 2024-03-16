@@ -67,10 +67,6 @@ img{
 .button:active{
     opacity: 0.6;
 }
-/* MAIN CONTENT */
-.main-content{
-    flex-grow: 1;
-}
 
 /* SITE HEADER */
 .site-header {
@@ -122,6 +118,11 @@ img{
     background-color: #fff;
     border: 0;
     border-bottom: 1px solid #333;
+}
+
+/* MAIN CONTENT */
+.main-content{
+    flex-grow: 1;
 }
 
 /* HERO */
@@ -245,4 +246,21 @@ img{
 }
 .runners-lead-cta .lead-cta-text{
     color: #fff;
+}
+
+/* CSS RETINA */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+    .runners{
+        background-image: url(../img/running@2x.jpg);
+    }
+    .hero{
+        background-image: url(../img/apple-watch-bg@2x.jpg);
+    }
 }
